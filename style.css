@@ -1,0 +1,500 @@
+* {
+    border: 2px solid red;
+}
+body {
+  background-color: white;
+}
+
+/*
+NAV BAR RELATED
+*/
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+li {
+    list-style-type: none;
+}
+nav {
+    width: 80%;
+    margin: auto;
+    height: 80px;
+}
+#nav-logo {
+    height: 90px;
+    width: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-bar-links {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 25px;
+}
+#full-nav {
+  background-image: linear-gradient(rgba(255,255,255,1) 75%, rgba(255,0,0,0));
+  position: absolute;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*
+INDEX PAGE CSS
+*/
+#slideshow-header {
+  position: absolute;
+  top: 500px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#slideshow-text-1 {
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+}
+#slideshow-text-2 {
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  color: white;
+}
+#full-landing {
+  position: relative;
+  height: auto;
+}
+#img-slideshow {
+    height: 980px;
+    width: 100%;
+}
+/*
+KELOWNA PAGE CSS
+*/
+
+/*
+PROPERTY CARD RELATED
+*/
+.property-card-image {
+  height: 300px;
+  text-align: center;
+  max-width: 490px;
+}
+.properties {
+  background-image: linear-gradient(rgba(255,0,0,0), rgba(255,255,255,1) 10%);
+  height: auto;
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  top: 850px;
+}
+.property-card {
+  width: 500px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  margin-top: 50px;
+}
+.tile {
+  cursor: pointer;
+}
+.image-row {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-info {
+  width: 60px;
+  height: 60px;
+}
+.column {
+  float: left;
+  width: 90px;
+}
+.image,
+.tile {
+  height: 90px;
+}
+.more-photos-button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: white;
+}
+.more-info-button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: white;
+}
+.button-box {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+.info-icons {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+/*
+0 PROPERTY CARD
+*/
+.property-image-0 {
+  display: none;
+  height: 300px;
+  text-align: center;
+}
+.image-0 {
+  opacity: 0.6;
+}
+.active,
+.image_0:hover {
+  opacity: 1;
+}
+.prev-0,
+.next-0 {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next-0 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev-0:hover,
+.next-0:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+/*
+1 PROPERTY CARD
+*/
+.prev-1,
+.next-1 {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next-1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev-1:hover,
+.next-1:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.image-1 {
+  opacity: 0.6;
+}
+.property-image-1 {
+  display: none;
+  height: 300px;
+  text-align: center;
+}
+.active,
+.image_1:hover {
+  opacity: 1;
+}
+/*
+2 PROPERTY CARD
+*/
+.property-image-2 {
+  display: none;
+  height: 300px;
+  text-align: center;
+}
+.image-2 {
+  opacity: 0.6;
+}
+.active,
+.image_2:hover {
+  opacity: 1;
+}
+.prev-2,
+.next-2 {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next-2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev-2:hover,
+.next-2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+/*
+3 PROPERTY CARD
+*/
+.property-image-3 {
+  display: none;
+  height: 300px;
+  text-align: center;
+}
+.image-3 {
+  opacity: 0.6;
+}
+.active,
+.image_3:hover {
+  opacity: 1;
+}
+.prev-3,
+.next-3 {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next-3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev-3:hover,
+.next-3:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+/*
+4 PROPERTY CARD
+*/
+.property-image-4 {
+  display: none;
+  height: 300px;
+  text-align: center;
+}
+.image-4 {
+  opacity: 0.6;
+}
+.active,
+.image_4:hover {
+  opacity: 1;
+}
+.prev-4,
+.next-4 {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next-4 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev-4:hover,
+.next-4:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+/*
+5 PROPERTY CARD
+*/
+.property-image-5 {
+  display: none;
+  height: 300px;
+  text-align: center;
+}
+.image-5 {
+  opacity: 0.6;
+}
+.active,
+.image_5:hover {
+  opacity: 1;
+}
+.prev-5,
+.next-5 {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next-5 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev-5:hover,
+.next-5:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+/*
+6 PROPERTY CARD
+*/
+.property-image-6 {
+  display: none;
+  height: 300px;
+  text-align: center;
+}
+.image-6 {
+  opacity: 0.6;
+}
+.active,
+.image_6:hover {
+  opacity: 1;
+}
+.prev-6,
+.next-6 {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next-6 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev-6:hover,
+.next-6:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+/*
+FOOTER-0 RELATED
+*/
+#footer-0 {
+  background-image: linear-gradient(rgba(255,0,0,0), rgba(65,65,65,1) 10%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  top: 890px;
+}
+.footer-header {
+  font-size: 25px;
+}
+.columns {
+  text-align: center;
+}
+#footer-menu {
+  width: 80%;
+  margin: auto;
+}
+.footer-nav-bar-links {
+  color: white;
+  font-size: 20px;
+}
+#footer-email {
+  font-size: 20px;
+}
+
+/*
+FOOTER-1 RELATED
+*/
+#footer-1 {
+  background-image: linear-gradient( rgba(255,0,0,0), rgba(65,65,65,1) 10%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  top: 2450px;
+}
+
+/*
+FOOTER-2 RELATED
+*/
+#footer-2 {
+  background-image: linear-gradient( rgba(255,0,0,0), rgba(65,65,65,1) 10%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  top: 1700px;
+}
+/*
+FOOTER-3 RELATED
+*/
+#footer-3 {
+  background-image: linear-gradient( rgba(255,0,0,0), rgba(65,65,65,1) 10%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  top: 1700px;
+}
