@@ -1,8 +1,8 @@
 * {
-    border: 2px solid red;
 }
 body {
   background-color: white;
+  margin: 0;
 }
 
 /*
@@ -47,7 +47,7 @@ INDEX PAGE CSS
 */
 #slideshow-header {
   position: absolute;
-  top: 500px;
+  top: 400px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -56,12 +56,13 @@ INDEX PAGE CSS
 #slideshow-text-1 {
   text-align: center;
   font-family: 'Bebas Neue', sans-serif;
-  color: white;
-}
-#slideshow-text-2 {
-  text-align: center;
-  font-family: 'Red Hat Display', sans-serif;
-  color: white;
+  color: black;
+  border: 4px solid black;
+  font-size: 50px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(199, 199, 199, 0.6);
 }
 #full-landing {
   position: relative;
@@ -71,10 +72,6 @@ INDEX PAGE CSS
     height: 980px;
     width: 100%;
 }
-/*
-KELOWNA PAGE CSS
-*/
-
 /*
 PROPERTY CARD RELATED
 */
@@ -99,6 +96,7 @@ PROPERTY CARD RELATED
   margin: auto;
   position: relative;
   margin-top: 50px;
+  border: 4px solid black;
 }
 .tile {
   cursor: pointer;
@@ -134,6 +132,9 @@ PROPERTY CARD RELATED
   border: 2px solid black;
   padding: 10px;
   background-color: white;
+}
+.more-info-button:hover {
+  cursor: pointer;
 }
 .button-box {
   text-align: center;
@@ -424,6 +425,128 @@ PROPERTY CARD RELATED
   color: white;
 }
 /*
+PROPERTY PAGE RELATED
+*/
+#property-info {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#property-image {
+  text-align: center;
+}
+.photos {
+  height: 400px;
+  width: auto;
+}
+.extra-info h1 {
+  font-family: 'Odor Mean Chey', serif;
+}
+.extra-info p {
+  font-family: 'Basic', sans-serif;
+}
+.property-icons {
+  width: 60px;
+  height: 60px;
+}
+.extra-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.info-text {
+  width: 480px;
+  margin-left: 35px;
+}
+.info {
+  text-align: center;
+}
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: space-between;
+}
+/*
+BLOG PAGE RELATED
+*/
+#main-blog-image {
+  width: 100%;
+  height: 700px;
+}
+#topic-info p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.topic-header {
+  font-family: 'Odor Mean Chey', serif;
+}
+#blog-topics h1{
+  font-family: 'Odor Mean Chey', serif;
+  text-align: center;
+}
+.topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.topic-photo {
+  height: 400px;
+  width: 70%;
+}
+#blog-topics {
+  top: 550px;
+  background-image: linear-gradient(rgba(255,0,0,0), rgba(255,255,255,1) 5%);
+  position: absolute;
+}
+.topic-button {
+  border: 4px solid black;
+  font-family: 'Odor Mean Chey', serif;
+  background-color: white;
+  width: 140px;
+  height: 60px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/*
+TOPIC PAGE RELATED
+*/
+.blog-heading {
+  font-family: 'Odor Mean Chey', serif;
+  margin-top: 200px;
+}
+#blog-main {
+  text-align: center;
+}
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*
 FOOTER-0 RELATED
 */
 #footer-0 {
@@ -497,4 +620,74 @@ FOOTER-3 RELATED
   position: absolute;
   width: 100%;
   top: 1700px;
+}
+/*
+FOOTER-4 RELATED
+*/
+#footer-4 {
+  background-image: linear-gradient( rgba(255,0,0,0), rgba(65,65,65,1) 10%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  top: 1150px;
+}
+/*
+FOOTER-5 RELATED
+*/
+#footer-5 {
+  background-image: linear-gradient( rgba(255,0,0,0), rgba(65,65,65,1) 10%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  top: 1350px;
+}
+/*
+FOOTER-6 RELATED
+*/
+#footer-6 {
+  background-image: linear-gradient( rgba(255,0,0,0), rgba(65,65,65,1) 10%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  top: 950px;
+}
+/*
+FOOTER-7 RELATED
+*/
+#footer-7 {
+  background-image: linear-gradient( rgba(255,0,0,0), rgba(65,65,65,1) 10%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  top: 1250px;
+}
+/*
+FOOTER-8 RELATED
+*/
+#footer-8 {
+  background-image: linear-gradient( rgba(255,0,0,0), rgba(65,65,65,1) 10%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  top: 1950px;
 }
