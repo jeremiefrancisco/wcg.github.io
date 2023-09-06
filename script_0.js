@@ -83,14 +83,13 @@ let x = 0;
 console.log(x)
 function menu_toggle() {
     if(x%2==0) {
-        document.body.style.height = "10px";
-        document.getElementById("menu-set").style.visibility = 'hidden';
-        document.getElementById("footer-1").style.visibility = 'hidden';
-        document.getElementById("img-slideshow").style.visibility = 'hidden';
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
     } else {
-        document.getElementById("menu-set").style.visibility = 'visible';
-        document.getElementById("footer-1").style.visibility = 'visible';
-        document.getElementById("img-slideshow").style.visibility = 'visible';
+        window.onscroll = function() {};
     }
     x++;
 }
