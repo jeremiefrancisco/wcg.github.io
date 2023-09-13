@@ -708,7 +708,10 @@ FOOTER-9 RELATED
 /*
 IPHONE CSS
 */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
+  * {
+    border: 1px solid red;
+  }
   #menuToggle
   {
     display: block;
@@ -794,7 +797,7 @@ IPHONE CSS
     text-align: center;
     display: grid;
     grid-template-rows: 100px 100px 100px 100px 100px;
-    width: 100%;
+    width: 190px;
     height: 100%;
     margin: 0px 0 0 -100px;
     position: fixed;
@@ -810,9 +813,33 @@ IPHONE CSS
   {
     transform: none;
   }
+  html {
+    width: 290px;
+  }
+  body {
+    min-width: 290px;
+  }
+  #full-nav {
+    width: 290px;
+  }
+  #img-slideshow {
+    width: 290px;
+  }
+  #slideshow-header {
+    display: none;
+  }
+  #full-landing {
+    width: 290px;
+  }
+  body {
+    height: 1500px;
+    width: 290px;
+  }
   #footer-0 {
     display: block;
     height: 400px;
+    width: 290px;
+    top: 900px;
   }
   .properties {
     top: 650px;
